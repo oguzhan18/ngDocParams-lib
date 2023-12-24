@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'html-docs-app'`, () => {
+  it(`should have as title 'ngDocParams-lib'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('html-docs-app');
+    expect(app.title).toEqual('ngDocParams-lib');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('html-docs-app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ngDocParams-lib app is running!');
   });
 });

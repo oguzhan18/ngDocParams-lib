@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "html-docs-app": {
+    "ngDocParams-lib": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/html-docs-app",
+            "outputPath": "dist/ngDocParams-lib",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "html-docs-app:build:production"
+              "browserTarget": "ngDocParams-lib:build:production"
             },
             "development": {
-              "browserTarget": "html-docs-app:build:development"
+              "browserTarget": "ngDocParams-lib:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "html-docs-app:build"
+            "browserTarget": "ngDocParams-lib:build"
           }
         },
         "test": {
